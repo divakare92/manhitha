@@ -1,16 +1,16 @@
 (function () {
   'use strict';
 
-  // Dark mode
-  const themeToggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
   const stored = localStorage.getItem('theme');
+  // Default to dark mode
   if (stored) {
     html.setAttribute('data-theme', stored);
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  } else {
     html.setAttribute('data-theme', 'dark');
   }
 
+  const themeToggle = document.getElementById('theme-toggle');
   if (themeToggle) {
     themeToggle.addEventListener('click', function () {
       const current = html.getAttribute('data-theme');
@@ -23,7 +23,6 @@
     themeToggle.textContent = current === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
   }
 
-  // Mobile menu
   const menuToggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
   if (menuToggle && navLinks) {
@@ -37,7 +36,6 @@
     });
   }
 
-  // Newsletter form
   const forms = document.querySelectorAll('.newsletter-form');
   forms.forEach(function (form) {
     form.addEventListener('submit', function (e) {
@@ -62,7 +60,6 @@
     });
   });
 
-  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const href = anchor.getAttribute('href');

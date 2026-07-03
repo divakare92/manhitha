@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="theme-color" content="#6c5ce7">
+  <meta name="theme-color" content="#0f0f1a">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6217999622218588" crossorigin="anonymous"></script>
   <meta property="og:title" content="Manhitha — Honest AI Tools Reviews & Comparisons">
-  <meta property="og:description" content="Find the best AI tools for work, creativity, and productivity. Real reviews, honest comparisons.">
+  <meta property="og:description" content="Find the best AI tools for work, creativity, and productivity.">
   <meta property="og:url" content="https://www.manhitha.co.in/">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 
@@ -26,13 +25,12 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/reviews/">Reviews</a></li>
-      <li><a href="/compare/">Comparisons</a></li>
+      <li><a href="/compare/">Compare</a></li>
       <li><a href="/free-tools.html">Free Tools</a></li>
       <li><a href="/resources.html">Top Tools</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="#newsletter">Subscribe</a></li>
+      <li class="nav-cta"><a href="#newsletter">Subscribe</a></li>
     </ul>
-    <div style="display:flex;align-items:center">
+    <div style="display:flex;align-items:center;gap:8px">
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
       <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -43,21 +41,27 @@
 
 <header class="hero">
   <div class="container">
-    <h1>Find the Right AI Tool<br>for Every Task</h1>
-    <p>Real reviews. Honest comparisons. No fluff. We test the tools so you don't have to waste time — or money.</p>
-    <div class="hero-btns">
-      <a href="/reviews/" class="btn btn-primary btn-lg">Browse Reviews</a>
-      <a href="#categories" class="btn btn-outline btn-lg">Explore Categories</a>
+    <h1>Find the Right AI Tool <span>for Every Task</span></h1>
+    <p>Real reviews. Honest comparisons. No fluff. We test the tools so you don't waste time or money.</p>
+    <div class="search-bar">
+      <span class="search-icon">&#x1F50D;</span>
+      <input type="text" placeholder="Search tools, comparisons, reviews..." aria-label="Search">
+    </div>
+    <div class="category-pills">
+      <a href="/reviews/?cat=writing" class="category-pill"><span class="icon">&#x270D;&#xFE0F;</span> Writing</a>
+      <a href="/reviews/?cat=image" class="category-pill"><span class="icon">&#x1F3A8;</span> Image</a>
+      <a href="/reviews/?cat=code" class="category-pill"><span class="icon">&#x1F4BB;</span> Coding</a>
+      <a href="/reviews/?cat=video" class="category-pill"><span class="icon">&#x1F3AC;</span> Video</a>
+      <a href="/reviews/?cat=audio" class="category-pill"><span class="icon">&#x1F3B5;</span> Audio</a>
+      <a href="/reviews/?cat=productivity" class="category-pill"><span class="icon">&#x26A1;</span> Productivity</a>
+      <a href="/reviews/?cat=marketing" class="category-pill"><span class="icon">&#x1F4C8;</span> Marketing</a>
     </div>
   </div>
 </header>
 
-<!-- AdSense: Remove comments and replace with ad code -->
-<div class="container"><div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6217999622218588" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
-
 <section>
   <div class="container">
-    <div class="stats-grid">
+    <div class="stat-row">
       <div class="stat-item">
         <h3>50+</h3>
         <p>Tools Reviewed</p>
@@ -74,223 +78,124 @@
   </div>
 </section>
 
-<section id="featured">
+<section>
   <div class="container">
-    <span class="section-label">Featured</span>
-    <h2 class="section-title">Top Picks This Month</h2>
-    <p class="section-desc">Hand-picked tools that deliver real results. Every pick is tested and verified by our team.</p>
-
+    <div class="section-header">
+      <h2>&#x2B50; Featured Tools This Month</h2>
+      <a href="/reviews/">View All &rarr;</a>
+    </div>
     <div class="tools-grid">
       <div class="tool-card">
         <span class="badge badge-freemium">Freemium</span>
         <span class="affiliate-badge">Affiliate</span>
         <h3>ChatGPT Plus</h3>
-        <div class="rating">★★★★★ 4.9/5</div>
-        <p>The gold standard for AI assistance. Writing, coding, brainstorming — it handles everything with surprising depth.</p>
-        <div class="tool-meta">
-          <span>Best for: General AI tasks</span>
-          <a href="https://openai.com/chatgpt" target="_blank" rel="noopener sponsored" class="btn btn-primary">Try ChatGPT →</a>
+        <div class="rating">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; 4.9/5</div>
+        <p>The gold standard for AI assistance. Writing, coding, brainstorming — handles everything.</p>
+        <div class="tool-footer">
+          <span>Best for: General AI</span>
+          <a href="https://openai.com/chatgpt" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-sm">Try ChatGPT &rarr;</a>
         </div>
       </div>
-
       <div class="tool-card">
         <span class="badge badge-paid">Paid</span>
         <span class="affiliate-badge">Affiliate</span>
         <h3>Midjourney</h3>
-        <div class="rating">★★★★★ 4.8/5</div>
-        <p>Unmatched image generation quality. The creative professional's choice for stunning visuals and artwork.</p>
-        <div class="tool-meta">
-          <span>Best for: Image generation</span>
-          <a href="https://midjourney.com" target="_blank" rel="noopener sponsored" class="btn btn-primary">Try Midjourney →</a>
+        <div class="rating">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; 4.8/5</div>
+        <p>Unmatched image generation quality. The creative professional's choice for stunning visuals.</p>
+        <div class="tool-footer">
+          <span>Best for: Image gen</span>
+          <a href="https://midjourney.com" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-sm">Try Midjourney &rarr;</a>
         </div>
       </div>
-
       <div class="tool-card">
         <span class="badge badge-paid">Paid</span>
         <span class="affiliate-badge">Affiliate</span>
         <h3>GitHub Copilot</h3>
-        <div class="rating">★★★★☆ 4.6/5</div>
-        <p>The AI pair programmer that writes code alongside you. Supports all major IDEs and languages.</p>
-        <div class="tool-meta">
+        <div class="rating">&#x2605;&#x2605;&#x2605;&#x2605;&#x2606; 4.6/5</div>
+        <p>The AI pair programmer that writes code alongside you. Supports all major IDEs.</p>
+        <div class="tool-footer">
           <span>Best for: Coding</span>
-          <a href="https://github.com/features/copilot" target="_blank" rel="noopener sponsored" class="btn btn-primary">Try Copilot →</a>
+          <a href="https://github.com/features/copilot" target="_blank" rel="noopener sponsored" class="btn btn-primary btn-sm">Try Copilot &rarr;</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="categories" style="background:var(--bg-secondary)">
-  <div class="container">
-    <span class="section-label">Browse</span>
-    <h2 class="section-title">Categories</h2>
-    <p class="section-desc">Find the right tool for your specific need.</p>
-    <div class="categories-grid">
-      <a href="/reviews/?cat=writing" class="category-card">
-        <span class="icon">✍️</span>
-        <h4>Writing & Content</h4>
-        <span>8 tools</span>
-      </a>
-      <a href="/reviews/?cat=image" class="category-card">
-        <span class="icon">🎨</span>
-        <h4>Image Generation</h4>
-        <span>7 tools</span>
-      </a>
-      <a href="/reviews/?cat=code" class="category-card">
-        <span class="icon">💻</span>
-        <h4>Coding</h4>
-        <span>6 tools</span>
-      </a>
-      <a href="/reviews/?cat=video" class="category-card">
-        <span class="icon">🎬</span>
-        <h4>Video & Animation</h4>
-        <span>5 tools</span>
-      </a>
-      <a href="/reviews/?cat=audio" class="category-card">
-        <span class="icon">🎵</span>
-        <h4>Audio & Music</h4>
-        <span>4 tools</span>
-      </a>
-      <a href="/reviews/?cat=productivity" class="category-card">
-        <span class="icon">⚡</span>
-        <h4>Productivity</h4>
-        <span>9 tools</span>
-      </a>
-      <a href="/reviews/?cat=data" class="category-card">
-        <span class="icon">📊</span>
-        <h4>Data & Analytics</h4>
-        <span>5 tools</span>
-      </a>
-      <a href="/reviews/?cat=marketing" class="category-card">
-        <span class="icon">📈</span>
-        <h4>Marketing & SEO</h4>
-        <span>6 tools</span>
-      </a>
-    </div>
-  </div>
-</section>
-
 <section>
   <div class="container">
-    <span class="section-label">Latest</span>
-    <h2 class="section-title">Recent Reviews & Guides</h2>
-    <p class="section-desc">Deep-dive reviews, comparisons, and tutorials to help you choose wisely.</p>
-
+    <div class="section-header">
+      <h2>&#x1F4DD; Latest Reviews</h2>
+      <a href="/reviews/">View All &rarr;</a>
+    </div>
     <div class="articles-grid">
       <article class="article-card">
-        <div class="article-body">
+        <div class="body">
           <span class="tag">Comparison</span>
-          <h3><a href="/compare/chatgpt-vs-claude.html">ChatGPT vs Claude: Which AI Assistant Wins in 2025?</a></h3>
-          <p>We put both through real-world tests — coding, writing, reasoning, and price. The winner might surprise you.</p>
+          <h3><a href="/compare/chatgpt-vs-claude.html">ChatGPT vs Claude: Which Wins in 2025?</a></h3>
+          <p>We put both through real-world tests — coding, writing, reasoning, and price.</p>
         </div>
-        <div class="meta">
-          <span>📅 July 2025</span>
-          <span>📖 8 min read</span>
-        </div>
+        <div class="meta"><span>July 2025</span><span>8 min read</span></div>
       </article>
-
       <article class="article-card">
-        <div class="article-body">
+        <div class="body">
           <span class="tag">Review</span>
-          <h3><a href="/reviews/midjourney-v6.html">Midjourney V6 Review: Is It Worth the Hype?</a></h3>
-          <p>A hands-on look at the latest version. We tested realism, prompt adherence, and speed.</p>
+          <h3><a href="/reviews/midjourney-v6.html">Midjourney V6 Review: Worth the Hype?</a></h3>
+          <p>Hands-on with Midjourney's latest. We tested realism, style control, and speed.</p>
         </div>
-        <div class="meta">
-          <span>📅 June 2025</span>
-          <span>📖 6 min read</span>
-        </div>
+        <div class="meta"><span>June 2025</span><span>6 min read</span></div>
       </article>
-
       <article class="article-card">
-        <div class="article-body">
+        <div class="body">
           <span class="tag">Guide</span>
-          <h3><a href="/reviews/best-ai-writing-tools.html">Best AI Writing Tools Compared in 2025</a></h3>
-          <p>Jasper vs Copy.ai vs Writesonic vs ChatGPT — we compare pricing, quality, and features head-to-head.</p>
+          <h3><a href="/reviews/best-ai-writing-tools.html">Best AI Writing Tools Compared 2025</a></h3>
+          <p>Jasper vs Copy.ai vs Writesonic vs ChatGPT — head-to-head on quality and price.</p>
         </div>
-        <div class="meta">
-          <span>📅 June 2025</span>
-          <span>📖 10 min read</span>
-        </div>
+        <div class="meta"><span>June 2025</span><span>10 min read</span></div>
       </article>
-
       <article class="article-card">
-        <div class="article-body">
+        <div class="body">
           <span class="tag">Coding</span>
-          <h3><a href="/reviews/github-copilot-review.html">GitHub Copilot Review: Still Worth It in 2025?</a></h3>
-          <p>Six months of daily use. Here's where Copilot excels, where it struggles, and who should buy it.</p>
+          <h3><a href="/reviews/github-copilot-review.html">GitHub Copilot: Still Worth It?</a></h3>
+          <p>Six months of daily use. Where it excels, where it struggles, who should buy it.</p>
         </div>
-        <div class="meta">
-          <span>📅 May 2025</span>
-          <span>📖 7 min read</span>
-        </div>
+        <div class="meta"><span>May 2025</span><span>7 min read</span></div>
       </article>
-
       <article class="article-card">
-        <div class="article-body">
+        <div class="body">
           <span class="tag">Productivity</span>
-          <h3><a href="/reviews/notion-ai-review.html">Notion AI Review: Is the AI Add-on Worth $10/Month?</a></h3>
-          <p>Notion's AI features promise to supercharge your workflow. We tested every feature for a month.</p>
+          <h3><a href="/reviews/notion-ai-review.html">Notion AI Review: Worth $10/Month?</a></h3>
+          <p>We tested Notion AI for a month across real team workflows. Honest verdict.</p>
         </div>
-        <div class="meta">
-          <span>📅 May 2025</span>
-          <span>📖 5 min read</span>
+        <div class="meta"><span>May 2025</span><span>5 min read</span></div>
+      </article>
+      <article class="article-card">
+        <div class="body">
+          <span class="tag">Free</span>
+          <h3><a href="/free-tools.html">Best Free AI Tools 2025</a></h3>
+          <p>Curated list of the best free AI tools. No credit card required for any of them.</p>
         </div>
+        <div class="meta"><span>Updated July 2025</span><span>12 tools</span></div>
       </article>
     </div>
-
-    <div style="text-align:center;margin-top:32px">
-      <a href="/reviews/" class="btn btn-outline">View All Reviews →</a>
-    </div>
   </div>
 </section>
 
-<!-- AdSense: Remove comments and replace with ad code -->
-<div class="container"><div class="ad-container"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6217999622218588" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div>
-
-<section>
-  <div class="container">
-    <div class="newsletter" style="margin:0">
-      <span class="section-label" style="text-align:center;display:block">💰</span>
-      <h2>Free AI Tools That Are Actually Good</h2>
-      <p>We curated the best free AI tools across writing, image, coding, and more. No credit card required.</p>
-      <div style="margin-top:12px">
-        <a href="/free-tools.html" class="btn btn-primary btn-lg">Browse Free Tools →</a>
-      </div>
-    </div>
+<div class="container">
+  <div class="ad-container">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6217999622218588" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
-</section>
-
-<section id="testimonials" style="background:var(--bg-secondary)">
-  <div class="container">
-    <div class="testimonials">
-      <span class="section-label">Trusted By</span>
-      <h2 class="section-title">What Our Readers Say</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p>"I was about to buy an expensive AI tool, but Manhitha's review saved me $200. Found a better free alternative."</p>
-          <div class="author">Rahul S. <span>— Freelance Developer</span></div>
-        </div>
-        <div class="testimonial-card">
-          <p>"The comparison tables are incredibly helpful. I always check Manhitha before committing to any paid tool."</p>
-          <div class="author">Priya M. <span>— Content Creator</span></div>
-        </div>
-        <div class="testimonial-card">
-          <p>"Honest reviews are hard to find in the AI space. This site actually tells you when a tool isn't worth it."</p>
-          <div class="author">Arjun K. <span>— Startup Founder</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
 <section id="newsletter">
   <div class="container">
-    <div class="newsletter">
+    <div class="newsletter-box">
       <h2>Never Waste Money on the Wrong Tool Again</h2>
-      <p>Get weekly reviews, comparisons, and exclusive deals delivered to your inbox. No spam, unsubscribe anytime.</p>
+      <p>Get weekly reviews, comparisons, and exclusive deals. No spam, unsubscribe anytime.</p>
       <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email" required aria-label="Email address">
-        <button type="submit" class="btn btn-primary btn-lg">Subscribe Free →</button>
+        <input type="email" placeholder="Enter your email" required aria-label="Email">
+        <button type="submit" class="btn btn-primary">Subscribe Free &rarr;</button>
       </form>
     </div>
   </div>
@@ -301,7 +206,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <h3><span style="color:var(--accent)">M</span>anhitha</h3>
-        <p>Honest AI tool reviews and comparisons. We help you find the right tool for every task — so you can work smarter, not harder.</p>
+        <p>Honest AI tool reviews and comparisons. We help you find the right tool for every task.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
@@ -310,7 +215,6 @@
           <li><a href="/compare/">Comparisons</a></li>
           <li><a href="/free-tools.html">Free Tools</a></li>
           <li><a href="/resources.html">Top Tools</a></li>
-          <li><a href="/about.html">About</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -333,11 +237,6 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; 2025 Manhitha. All rights reserved.</span>
-      <div class="footer-bottom-links">
-        <a href="/privacy.html">Privacy</a>
-        <a href="/about.html#affiliate">Disclosure</a>
-        <a href="/contact.html">Contact</a>
-      </div>
     </div>
   </div>
 </footer>
