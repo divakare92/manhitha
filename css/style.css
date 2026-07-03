@@ -399,7 +399,7 @@ footer {
   section { padding: 40px 0; }
   .tools-grid { grid-template-columns: 1fr; }
   .articles-grid { grid-template-columns: 1fr; }
-  .stat-row { grid-template-columns: 1fr; gap: 20px; }
+  .stat-row { gap: 12px; }
   .newsletter-box, .newsletter { padding: 28px 20px; }
   .newsletter-form { flex-direction: column; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
