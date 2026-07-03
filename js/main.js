@@ -79,9 +79,33 @@
         e.preventDefault();
         var query = searchInput.value.trim();
         if (query) {
-          window.open('https://www.google.com/search?q=site:manhitha.co.in+' + encodeURIComponent(query), '_blank');
+          window.location.href = '/reviews/?q=' + encodeURIComponent(query);
         }
       }
     });
+  }
+
+  var params = new URLSearchParams(window.location.search);
+  var searchQuery = params.get('q');
+  if (searchQuery) {
+    var cards = document.querySelectorAll('.article-card, .tool-card');
+    var count = 0;
+    var qLower = searchQuery.toLowerCase();
+    cards.forEach(function (card) {
+      if (card.textContent.toLowerCase().indexOf(qLower) !== -1) {
+        card.style.display = '';
+        count++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+    var heading = document.querySelector('.page-header h1');
+    if (heading) {
+      heading.textContent = 'Search results for "' + searchQuery + '"';
+    }
+    var desc = document.querySelector('.page-header p');
+    if (desc) {
+      desc.textContent = count + ' result' + (count !== 1 ? 's' : '') + ' found';
+    }
   }
 })();
