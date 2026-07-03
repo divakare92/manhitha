@@ -71,4 +71,17 @@
       }
     });
   });
+
+  var searchInput = document.getElementById('search-input');
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        var query = searchInput.value.trim();
+        if (query) {
+          window.open('https://www.google.com/search?q=site:manhitha.co.in+' + encodeURIComponent(query), '_blank');
+        }
+      }
+    });
+  }
 })();
